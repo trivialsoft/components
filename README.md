@@ -1,2 +1,7 @@
-# components
-Referencia de Trivial Components 1.0
+# Referencia de Trivial Components 1.0
+
+
+* Estructura
+* Modelos
+* Componentes
+* Sintaxis de Plantillas
