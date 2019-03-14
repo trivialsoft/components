@@ -2,8 +2,20 @@
 
 > Este repositorio prentende ser una guia y referencia rápida para el uso del framework TC 1.0.
 
-* Modelos Persistentes
-> Los modelos Persistentes, son la clases que se usan para representar objetos persistido en la base de datos, tienen 
+## Estructura de un componente
+
+> Se ejemplifica con el siguiente ejemplo:
+
+```plain
+
+Usuario(carpeta)/Usuario.php             -- Modelo          
+				/Usuario.html            -- Plantilla
+				/Usuario.js              -- Script Frontend 
+				/UsuarioComponent.php    -- Script Backend 
+```
+
+* Modelo Persistente
+> Un modelo Persistente, es la clase que se usa para representar objetos persistidos en la base de datos, tienen 
 la estructura que se ejemplifica a continuación:
 
 ```php 
@@ -36,8 +48,8 @@ public function jsonSerialize()
 	}
 ?>
 ```
-* Modelos No Persistentes
-> Estos modelos son la clases que se usan para poblar información de componente y que no guarda relacion directa con una entidad , tienen 
+* Modelo No Persistentes
+> Un modelo No Persistente es una clase que se usan para poblar información de componente y que no guarda relacion directa con una entidad , tienen 
 la estructura que se ejemplifica a continuación:
 
 ```php
