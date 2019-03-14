@@ -9,9 +9,9 @@
 ```plain
 
 Usuario(carpeta)/Usuario.php             -- Modelo          
-				/Usuario.html            -- Plantilla
-				/Usuario.js              -- Script Frontend 
-				/UsuarioComponent.php    -- Script Backend 
+                /Usuario.html            -- Plantilla
+                /Usuario.js              -- Script Frontend 
+                /UsuarioComponent.php    -- Script Backend 
 ```
 
 * Modelo Persistente
