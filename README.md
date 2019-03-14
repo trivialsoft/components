@@ -2,8 +2,8 @@
 
 > Este repositorio prentende ser una guia y referencia rápida para el uso del framework TC 1.0.
 
-* Modelos
-> Los modelos de negocio, son la clases que se usan para representar objetos persistido en la base de datos, tienen 
+* Modelos Persistentes
+> Los modelos Persistentes, son la clases que se usan para representar objetos persistido en la base de datos, tienen 
 la estructura que se ejemplifica a continuación:
 
 ```php 
@@ -36,6 +36,31 @@ public function jsonSerialize()
 	}
 ?>
 ```
+* Modelos No Persistentes
+> Estos modelos son la clases que se usan para poblar información de componente y que no guarda relacion directa con una entidad , tienen 
+la estructura que se ejemplifica a continuación:
+
+```php
+<?php
+namespace Home;
+class Home {
+function __construct()
+	{	
+	}
+
+function Nombre()
+	{
+		return "TrivialSoft";
+	}	
+function select()
+	{
+		return array(0=>$this);
+	}	
+}
+?>
+
+```
+
 
 * Archivo boot.php
 * API
