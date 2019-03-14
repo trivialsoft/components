@@ -14,15 +14,15 @@ Usuario(carpeta)/Usuario.php             -- Modelo
                 /UsuarioComponent.php    -- Script Backend 
 ```
 
-* Modelo Persistente
+## Modelo Persistente
 > Un modelo Persistente, es la clase que se usa para representar objetos persistidos en la base de datos, tienen 
 la estructura que se ejemplifica a continuación:
 
 ```php 
+<?php
 /**
 *  file location: components/Usuario/Usuario.php 
 */ 
-<?php
 namespace Usuario;
 use \core\SSD\Model as Model;
 class Usuario extends Model implements \JsonSerializable {
@@ -48,12 +48,16 @@ public function jsonSerialize()
 	}
 ?>
 ```
-* Modelo No Persistentes
+
+## Modelo No Persistentes
 > Un modelo No Persistente es una clase que se usan para poblar información de componente y que no guarda relacion directa con una entidad , tienen 
 la estructura que se ejemplifica a continuación:
 
 ```php
 <?php
+/**
+*  file location: components/Home/Home.php 
+*/ 
 namespace Home;
 class Home {
 function __construct()
@@ -71,6 +75,17 @@ function select()
 }
 ?>
 
+```
+
+## Plantilla
+
+> Se refiere al texto html que sepresenta la representación grafica del componente
+
+```html
+<!--file: components/Ciudad/Ciudad.html -->
+<div class="alert alert-info">
+<li>{{Nombre[]}}, {{Estado.Nombre[]}}</li>
+</div>
 ```
 
 
