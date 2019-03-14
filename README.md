@@ -107,6 +107,9 @@ function select()
 > a continuacion se explica como interactuar con el backend
 
 ```plain
+Nota: todas los request deben llevar en el header un token oauth
+Authorization Bearer 1234abc
+
 Si se necesita recuperar una coleccion de elementos 
 GET: /api/v4/ciudades
 Si se necesita recuperar una coleccion de elementos ordenada por una propiedad
@@ -117,7 +120,10 @@ Si se necesita recuperar una coleccion de elementos con sus subinstacias hasta u
 GET: /api/v4/ciudades/3
 Si se necesita modificar una o mas instancias 
 POST: /api/v4/ciudades
-body:
+headers:
+Content-Type:application/json
+
+body(raw+JSON(application/json)):
 [
 {"modelname":"Ciudad",
 "Ciudad":1
