@@ -141,6 +141,7 @@ POST: /api/v4/preguntas/like
 Nota:similar al ejemplo de modificacion.
 
 ```
-
+* Configuración mode_rewrite
 * Archivo boot.php
 * Estructura de un proyecto
+* Componentes core
