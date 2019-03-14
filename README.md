@@ -79,7 +79,19 @@ function select()
 
 ## Plantilla
 
-> Se refiere al texto html que sepresenta la representación grafica del componente
+> Se refiere al texto html que sepresenta la representación grafica del componente, se ejemplifica a continuación:
+
+```html
+<!--file:components/Home/Home.html-->
+<div class="container">
+     <div class="row">
+	 <div class="col">
+	    <ts:Ciudad m:(Ciudad) f:({}) t:()></ts:Ciudad>
+	 </div>
+	 </div>
+</div>
+
+```
 
 ```html
 <!--file: components/Ciudad/Ciudad.html -->
