@@ -101,8 +101,39 @@ function select()
 ```
 
 
+
+## API Trivial
+
+> a continuacion se explica como interactuar con el backend
+
+```plain
+Si se necesita recuperar una coleccion de elementos 
+GET: /api/v4/ciudades
+Si se necesita recuperar una coleccion de elementos ordenada por una propiedad
+GET: /api/v4/ciudades/Nombre_desc
+Si se necesita recuperar una coleccion de elementos filtrada por una propiedad
+GET: /api/v4/ciudades/{"Estado":1}
+Si se necesita recuperar una coleccion de elementos con sus subinstacias hasta un tercer nivel
+GET: /api/v4/ciudades/3
+Si se necesita modificar una o mas instancias 
+POST: /api/v4/ciudades
+body:
+[
+{"modelname":"Ciudad",
+"Ciudad":1
+"Nombre":"Monterrey"
+},
+{"modelname":"Ciudad",
+"Ciudad":2
+"Nombre":"Tuxpan"
+}
+]
+
+
+```
+
 * Archivo boot.php
-* API
+
 * Recuperar instancias de objetos
 * Modificar instancias de objetos
 * Ejecurar acciones
