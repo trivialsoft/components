@@ -135,14 +135,12 @@ body(raw+JSON(application/json)):
 }
 ]
 
+Si se necesita modificar una o mas instancias y ademas aplicar una accion
+POST: /api/v4/preguntas/like
+
+Nota:similar al ejemplo de modificacion.
 
 ```
 
 * Archivo boot.php
-
-* Recuperar instancias de objetos
-* Modificar instancias de objetos
-* Ejecurar acciones
 * Estructura de un proyecto
-* Componentes
-* Sintaxis de Plantillas
